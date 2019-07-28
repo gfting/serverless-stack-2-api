@@ -35,3 +35,7 @@ jobs:
       - run:
           name: Deploy application
           command: sls deploy --stage pre
+
+      - run:
+        name: Deploy prod application
+        command: sls deploy --stage prod
